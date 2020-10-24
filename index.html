@@ -32,9 +32,34 @@
                 <button class="btn btn-primary mb-3" type="button" id="clear-history">Clear history</button>
                 <form id="history"></form>
             </div>
-            
-                
-           
+            <div class="col-lg-9">
+                <div class="row mr-0">
+                    <div class="col-lg-11 card m-3 d-none" id="today-weather">
+                        <div class="card-body">
+                            <!-- drop location for current city/img/temp/humidity/wind/uv  -->
+                            <h3 id="city-name" class="city-name align-middle"></h3>
+                            <img id="current-pic" alt="">
+                            <p id="temperature"></p>
+                            <p id="humidity"></p>
+                            <p id="wind-speed"></p>
+                            <p id="UV-index"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-none" id="5dayLook">
+                    <div class="col-12">
+                        <h3 style="text-align: center;">5-Day Forecast</h3>
+                    </div>
+                </div>
+                <!-- drop locations for 5 day forecast  -->
+                <div class="row">
+                    <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
+                    <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
+                    <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
+                    <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
+                    <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- javascript libraries -->
